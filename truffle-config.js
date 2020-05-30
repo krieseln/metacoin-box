@@ -4,7 +4,7 @@ const teamsMnemonic = "ritual opera viable knife theory woman naive cousin limb 
 
 
 module.exports = {
-    contracts_build_directory: "/client/src/contracts",
+    //contracts_build_directory: "/client/src/contracts",
     networks: {
         teams: {
             provider: function() {
