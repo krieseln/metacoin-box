@@ -1,10 +1,10 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const teamsMnemonic = "ritual opera viable knife theory woman naive cousin limb teach play catch";
-const path = require("path");
+//const path = require("path");
 
 
 module.exports = {
-    contracts_build_directory: path.join(__dirname, "client/src/contracts"),
+    contracts_build_directory: "/client/src/contracts",
     networks: {
         teams: {
             provider: function() {
