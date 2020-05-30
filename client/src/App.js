@@ -19,9 +19,11 @@ class App extends Component {
     try {
       // Get network provider and web3 instance.
       // --> Browser-Fenster wird gebaut
-        const provider = new Web3.providers.HttpProvider(
-            "https://sandbox.truffleteams.com/75c361c5-502c-4169-9651-36e265b87246"
-        );
+        const HDWalletProvider = require("@truffle/hdwallet-provider");
+        const Web3 = require("web3");
+        const mnemonic = "exotic arch fetch gospel buyer month useless false improve pill empty rack";
+        let provider = new HDWalletProvider(mnemonic, "https://sandbox.truffleteams.com/75c361c5-502c-4169-9651-36e265b87246");
+
         const web3 = new Web3(provider);
 
       // Use web3 to get the user's accounts.
